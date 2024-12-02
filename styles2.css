@@ -1,0 +1,145 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Variables */
+  :root {
+    --primary-color: rgba(72, 191, 144, 1);
+    --secondary-color: rgba(123, 140, 229, 1);
+    --bg-color: #000812;
+    --text-color: #fff;
+    --font-family: 'DM Sans', sans-serif;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .navbar__links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar__link {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+  }
+  
+  .navbar__link:hover,
+  .navbar__link--active {
+    color: var(--primary-color);
+  }
+  
+  .navbar__button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .hero__content {
+    flex: 1;
+  }
+  
+  .hero__image {
+    flex: 1;
+    max-width: 100%;
+  }
+  
+  /* Section Header */
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    color: var(--text-color);
+  }
+  
+  /* Grid */
+  .grid--services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .service-card {
+    background-color: #1a1a2e;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .service-card__icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .service-card__title {
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+  }
+  
+  .service-card__description {
+    font-size: 1rem;
+    color: #bbb;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #0c1322;
+    padding: 20px 0;
+  }
+  
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer__links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer__link {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+  .footer__copy {
+    font-size: 0.8rem;
+    color: #bbb;
+  }
+  
